@@ -9,7 +9,7 @@
     "start": "node dist",
     "prestart": "npm run -s build",
     "test": "jest src",
-    "lint": "eslint \"**/*.js\"",
+    "lint": "./node_modules/.bin/eslint \"**/*.js\"",
     "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
   },
   "repository": "antoniomdk/pointcloud-generator",
