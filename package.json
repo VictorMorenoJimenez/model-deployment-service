@@ -11,7 +11,7 @@
     "test": "jest src",
     "lint": "eslint \"**/*.js\""
   },
-  "repository": "developit/express-es6-rest-api",
+  "repository": "antoniomdk/pointcloud-generator",
   "author": "Antonio Molner Domenech <antoniomdk@hotmail.es>",
   "license": "GNU General Public License v3.0",
   "dependencies": {
