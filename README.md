@@ -1,37 +1,39 @@
-## Welcome to GitHub Pages
+# Welcome to Point Cloud Generator 👋
+![Version](https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000)
+[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](http://www.antoniomolner.com/pointcloud-generator/)
 
-You can use the [editor on GitHub](https://github.com/antoniomdk/pointcloud-generator/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+> Microservice to create point cloud using realtime data from ROS or bag files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### 🏠 [Homepage](http://www.antoniomolner.com/pointcloud-generator/)
 
-### Markdown
+## Install
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```sh
+npm install
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Usage
 
-### Jekyll Themes
+```sh
+npm run start
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/antoniomdk/pointcloud-generator/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Run tests
 
-### Support or Contact
+```sh
+npm run test
+```
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Author
+
+* Github: [@antoniomdk](https://github.com/antoniomdk)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check [issues page](https://github.com/antoniomdk/pointcloud-generator/issues).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
