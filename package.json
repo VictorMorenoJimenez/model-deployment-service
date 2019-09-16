@@ -4,11 +4,12 @@
   "description": "Microservice to create point cloud using realtime data from ROS or bag files.",
   "main": "dist",
   "scripts": {
-    "dev": "nodemon -w src --exec \"babel-node src --presets es2015,stage-0\"",
-    "build": "babel src -s -D -d dist --presets es2015,stage-0",
+    "dev": "nodemon -w src --exec \"babel-node src \"",
+    "build": "babel src -s -D -d dist",
     "start": "node dist",
     "prestart": "npm run -s build",
-    "test": "eslint src"
+    "test": "jest src",
+    "lint": "eslint \"**/*.js\""
   },
   "repository": "developit/express-es6-rest-api",
   "author": "Antonio Molner Domenech <antoniomdk@hotmail.es>",
@@ -33,6 +34,7 @@
     "eslint-plugin-ramda": "^2.5.1",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
+    "jest": "^24.9.0",
     "nodemon": "^1.9.2"
   }
 }
