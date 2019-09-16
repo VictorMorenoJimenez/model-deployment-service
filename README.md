@@ -1,6 +1,5 @@
 # Welcome to Point Cloud Generator 👋
-![Version](https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000)
-[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](http://www.antoniomolner.com/pointcloud-generator/)
+![Version](https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000) [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](http://www.antoniomolner.com/pointcloud-generator/) [![Build Status](https://travis-ci.org/antoniomdk/pointcloud-generator.svg?branch=master)](https://travis-ci.org/antoniomdk/pointcloud-generator)
 
 > Microservice to create point cloud using realtime data from ROS or bag files.
 
