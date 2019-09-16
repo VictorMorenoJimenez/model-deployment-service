@@ -1,0 +1,38 @@
+{
+  "name": "point-cloud-generator",
+  "version": "0.0.1",
+  "description": "Microservice to create point cloud using realtime data from ROS or bag files.",
+  "main": "dist",
+  "scripts": {
+    "dev": "nodemon -w src --exec \"babel-node src --presets es2015,stage-0\"",
+    "build": "babel src -s -D -d dist --presets es2015,stage-0",
+    "start": "node dist",
+    "prestart": "npm run -s build",
+    "test": "eslint src"
+  },
+  "repository": "developit/express-es6-rest-api",
+  "author": "Antonio Molner Domenech <antoniomdk@hotmail.es>",
+  "license": "GNU General Public License v3.0",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "compression": "^1.5.2",
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "morgan": "^1.8.0",
+    "resource-router-middleware": "^0.6.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.6.0",
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.9.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-fp": "^2.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-ramda": "^2.5.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "nodemon": "^1.9.2"
+  }
+}
