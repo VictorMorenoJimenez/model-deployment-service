@@ -9,7 +9,8 @@
     "start": "node dist",
     "prestart": "npm run -s build",
     "test": "jest src",
-    "lint": "eslint \"**/*.js\""
+    "lint": "eslint \"**/*.js\"",
+    "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
   },
   "repository": "antoniomdk/pointcloud-generator",
   "author": "Antonio Molner Domenech <antoniomdk@hotmail.es>",
@@ -26,6 +27,7 @@
     "@babel/preset-env": "^7.6.0",
     "babel-cli": "^6.9.0",
     "babel-core": "^6.9.0",
+    "coveralls": "^3.0.6",
     "eslint": "^6.1.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-fp": "^2.3.0",
