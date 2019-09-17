@@ -12,10 +12,9 @@ Table of Contents
 * [Features](#features)
 * [Install](#install)
 * [Usage](#usage)
+* [Documentation](#documentation)
 * [Run tests](#run-tests)
-* [Author](#author)
 * [Contributing](#-contributing)
-* [Show your support](#show-your-support)
 
 ## Features
 
