@@ -5,6 +5,8 @@
 
 ### 🏠 [Homepage](http://www.antoniomolner.com/pointcloud-generator/)
 
+### 📝 [Proposal](./PROPOSAL.md)
+
 
 Table of Contents
 =================
