@@ -27,8 +27,6 @@ module.exports = {
     'no-underscore-dangle': ['error', { allow: ['__'] }],
     'fp/no-class': 'warn',
     'fp/no-loops': 'error',
-    'fp/no-mutating-methods': 'warn',
-    'fp/no-mutation': 'warn',
     'fp/no-mutating-methods': [
       'warn',
       { allowedObjects: ['_', 'R', 'fp', 'Actions'] },
