@@ -67,7 +67,7 @@ To use this approach I will use [dotenv](https://www.npmjs.com/package/dotenv) w
 reads a .env file and exports the environment variables automatically.
 
 
-### Databases
+### Storage
 
 As I don't know which cloud platform we will be using I cannot specify any storage system in particular.
 But this service will need a distributed storage system (S3 and similar) for the point clouds.
