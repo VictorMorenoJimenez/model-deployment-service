@@ -1,9 +1,9 @@
-# Point Cloud Generator
-![Version](https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000) [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](http://www.antoniomolner.com/pointcloud-generator/) [![Build Status](https://travis-ci.org/antoniomdk/pointcloud-generator.svg?branch=master)](https://travis-ci.org/antoniomdk/pointcloud-generator) [![Coverage Status](https://coveralls.io/repos/github/antoniomdk/pointcloud-generator/badge.svg?branch=master)](https://coveralls.io/github/antoniomdk/pointcloud-generator?branch=master)
+# MDS (Model Deployment Service)
+![Version](https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000) [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](http://www.antoniomolner.com/model-deployment-service/) [![Build Status](https://travis-ci.org/antoniomdk/model-deployment-service.svg?branch=master)](https://travis-ci.org/antoniomdk/model-deployment-service) [![Coverage Status](https://coveralls.io/repos/github/antoniomdk/model-deployment-service/badge.svg?branch=master)](https://coveralls.io/github/antoniomdk/model-deployment-service?branch=master)
 
-> Microservice to create point cloud using realtime data from ROS or bag files.
+> Microservice to storage machine learning models and make prediction on demand.
 
-### 🏠 [Homepage](http://www.antoniomolner.com/pointcloud-generator/)
+### 🏠 [Homepage](http://www.antoniomolner.com/model-deployment-service/)
 
 ### 📝 [Proposal](./PROPOSAL.md)
 
@@ -56,7 +56,7 @@ TODO
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check [issues page](https://github.com/antoniomdk/pointcloud-generator/issues).
+Feel free to check [issues page](https://github.com/antoniomdk/model-deployment-service/issues).
 
 ## Show your support
 
