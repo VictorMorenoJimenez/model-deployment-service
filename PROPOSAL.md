@@ -36,7 +36,7 @@ of followers. I've chosen it mostly by its support and documentation. The perfor
 important because the main workload corresponds to the predictions
 made by ONNX.js.
 
-### Wiston
+### Winston
 
 Every server from small to large needs a flexible logger. Winston is a logging system that allows developers to
 create complex loggers in a few lines. It also has a variety of transport that can be used, for example, to upload
