@@ -1,7 +1,7 @@
 {
-  "name": "point-cloud-generator",
+  "name": "model-deployment-service",
   "version": "0.0.1",
-  "description": "Microservice to create point cloud using realtime data from ROS or bag files.",
+  "description": "Microservice to storage machine learning models and make predictions on demand.",
   "main": "dist",
   "scripts": {
     "dev": "nodemon -w src --exec \"babel-node src \"",
