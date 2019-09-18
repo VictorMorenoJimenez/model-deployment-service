@@ -40,7 +40,8 @@ made by ONNX.js.
 
 Every server from small to large needs a flexible logger. Winston is a logging system that allows developers to
 create complex loggers in a few lines. It also has a variety of transport that can be used, for example, to upload
-the logs automatically to Sentry (another awesome tool) or store it in a database. 
+the logs automatically to Sentry (another awesome tool) or store it in a database. In this case, we will be storing
+the logs as text files in the directory ./logs.
 
 
 ### Babel
