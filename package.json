@@ -12,7 +12,7 @@
     "lint": "./node_modules/.bin/eslint \"**/*.js\"",
     "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
   },
-  "repository": "antoniomdk/pointcloud-generator",
+  "repository": "antoniomdk/model-deployment-service",
   "author": "Antonio Molner Domenech <antoniomdk@hotmail.es>",
   "license": "GNU General Public License v3.0",
   "dependencies": {
