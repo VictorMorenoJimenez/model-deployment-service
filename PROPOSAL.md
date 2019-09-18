@@ -16,6 +16,10 @@ a REST API or via WebSockets.
 
 ### ONNX
 
+ONNX is an ecosystem for interchangeable ML models. It provides tools for exporting, reading and standardize models
+from different ML frameworks. This tool will provide the microservice the ability to handle almost all kinds of 
+models, from Neural Networks to linear regression models.
+
 
 ### NodeJS
 
