@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon -w src --exec \"babel-node src \"",
     "build": "babel src -s -D -d dist",
-    "start": "node dist",
+    "start": "node dist/server.js",
     "prestart": "npm run -s build",
     "test": "jest src",
     "lint": "./node_modules/.bin/eslint \"**/*.js\"",
@@ -33,9 +33,9 @@
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
     "@babel/preset-env": "^7.6.0",
-    "babel-cli": "^6.9.0",
-    "babel-core": "^6.9.0",
     "coveralls": "^3.0.6",
     "eslint": "^6.1.0",
     "eslint-config-airbnb": "^18.0.1",
