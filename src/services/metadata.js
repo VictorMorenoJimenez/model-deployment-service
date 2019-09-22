@@ -10,4 +10,4 @@ const getModelMetadata = (model) => {
   };
 };
 
-export default getModelMetadata;
+export { getModelMetadata };

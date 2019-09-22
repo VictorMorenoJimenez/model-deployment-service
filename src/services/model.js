@@ -1,8 +1,18 @@
 import * as R from 'ramda';
 
-import { getModelMetadata } from './metadata';
 import { Model } from '../models';
 import { convertToObject } from '../utils/db';
+
+const getModelMetadata = (session) => (model) => {
+  // TODO: Get metadata from Onnx.js runtime
+  console.log(model);
+  return {
+    inputName: null,
+    outputName: null,
+    inputSize: null,
+    outputSize: null,
+  };
+};
 
 const saveModel = (storageProvider) => async (modelFile) => {
   const metadata = getModelMetadata(modelFile);
@@ -44,5 +54,11 @@ const getModel = async (modelId) => {
 };
 
 export {
-  saveModel, retreiveModel, deleteModel, updateModel, getAllModels, getModel,
+  saveModel,
+  retreiveModel,
+  deleteModel,
+  updateModel,
+  getAllModels,
+  getModel,
+  getModelMetadata,
 };
