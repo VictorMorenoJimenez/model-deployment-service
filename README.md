@@ -1,11 +1,20 @@
 # MDS (Model Deployment Service)
 ![Version](https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000) [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](http://www.antoniomolner.com/model-deployment-service/) [![Build Status](https://travis-ci.org/antoniomdk/model-deployment-service.svg?branch=master)](https://travis-ci.org/antoniomdk/model-deployment-service) [![Coverage Status](https://coveralls.io/repos/github/antoniomdk/model-deployment-service/badge.svg?branch=master)](https://coveralls.io/github/antoniomdk/model-deployment-service?branch=master) [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/antoniomdk/model-deployment-service.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/antoniomdk/model-deployment-service/context:javascript)
 
+
 > Microservice to store machine learning models and make predictions on demand.
+
 
 ### 🏠 [Homepage](http://www.antoniomolner.com/model-deployment-service/)
 
-### 📝 [Proposal](./PROPOSAL.md)
+
+## Description
+
+The idea is to create a web service to create and store machine learning models.
+These models will be in a standard format [ONNX](https://onnx.ai/). This format allows data scientists and ML practitioners to export models from a variety of libraries: [SKLearn](https://scikit-learn.org/), 
+[Tensorflow](https://www.tensorflow.org/) ... into a common format.
+The pretrained model is received by the server as multi-part data and once uploaded, the model can be used
+to make predictions using a REST API or via [WebSockets](https://developer.mozilla.org/docs/Web/API/WebSockets_API).
 
 
 Table of Contents
@@ -61,18 +70,6 @@ Feel free to check [issues page](https://github.com/antoniomdk/model-deployment-
 ## Show your support
 
 Give a ⭐️ if this project helped you!
-
-
-# Proposal
-
-## Description
-
-The idea is to create a web service to create and store machine learning models.
-These models will be in a standard format [ONNX](https://onnx.ai/). This format allows data scientists and ML practitioners
-to export models from a variety of libraries: [SKLearn](https://scikit-learn.org/), 
-[Tensorflow](https://www.tensorflow.org/) ... into a common format.
-The pretrained model is received by the server as multi-part data and the prediction request using
-a REST API or via [WebSockets](https://developer.mozilla.org/docs/Web/API/WebSockets_API).
 
 
 ## Technology Stack
