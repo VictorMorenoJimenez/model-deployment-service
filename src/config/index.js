@@ -10,4 +10,5 @@ export default {
   ENABLE_LOG_FILE: process.env.ENABLE_LOG_FILE || false,
   STORAGE_ACCOUNT_NAME: process.env.AZURE_STORAGE_ACCOUNT_NAME,
   ACCOUNT_ACCESS_KEY: process.env.AZURE_STORAGE_ACCOUNT_ACCESS_KEY,
+  MONGODB_URI: process.env.MONGODB_URL || 'localhost/test',
 };
