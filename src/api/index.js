@@ -14,9 +14,8 @@ app.use(bodyParser.json());
 app.use(methodOverride());
 
 if (config.ENABLE_APIDOCS) {
-  const swaggerDocument = YAML.load(
-    path.join(__dirname, '../../apidoc.yaml'),
-  );
+  const swaggerDocFile = path.join(__dirname, '../../apidoc.yaml');
+  const swaggerDocument = YAML.load(swaggerDocFile);
   app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 }
 
