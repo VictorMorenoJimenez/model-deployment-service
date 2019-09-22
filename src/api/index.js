@@ -2,6 +2,7 @@ import express from 'express';
 import path from 'path';
 import YAML from 'yamljs';
 import bodyParser from 'body-parser';
+import helmet from 'helmet';
 import methodOverride from 'method-override';
 import swaggerUi from 'swagger-ui-express';
 import indexRouter from './routes';
@@ -9,6 +10,7 @@ import config from '../config';
 
 const app = express();
 
+app.use(helmet());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(methodOverride());
