@@ -13,3 +13,5 @@ router.put('/model/:id', (req, res) => {
 
 router.delete('/model/:id', (req, res) => {
 });
+
+export default router;

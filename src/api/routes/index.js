@@ -9,4 +9,8 @@ router.use(modelRouter);
 router.use(inferenceRouter);
 router.use(sessionRouter);
 
+router.get('/', (_, res) => {
+  res.send('Hello World');
+});
+
 export default router;
