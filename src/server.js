@@ -4,12 +4,15 @@ import app from './api';
 import config from './config';
 import { normalizePort } from './utils/server';
 
-const { MONGODB_URI, PORT } = config;
+const { MONGO_URI, PORT } = config;
 
-mongoose.connect(MONGODB_URI, { server: { socketOptions: { keepAlive: 1 } } });
+mongoose.connect(MONGO_URI, {
+  server: { socketOptions: { keepAlive: 1 } },
+  useNewUrlParser: true,
+});
 
 mongoose.connection.on('error', () => {
-  throw new Error(`Unable to connect to database: ${MONGODB_URI}`);
+  throw new Error(`Unable to connect to database: ${MONGO_URI}`);
 });
 
 const dbConnection = mongoose.connection;
@@ -25,9 +28,7 @@ dbConnection.once('open', () => {
       throw error;
     }
 
-    const bind = typeof port === 'string'
-      ? `Pipe ${port}`
-      : `Port ${port}`;
+    const bind = typeof port === 'string' ? `Pipe ${port}` : `Port ${port}`;
 
     switch (error.code) {
       case 'EACCES':
@@ -45,9 +46,7 @@ dbConnection.once('open', () => {
 
   const onListening = () => {
     const addr = server.address();
-    const bind = typeof addr === 'string'
-      ? `pipe ${addr}`
-      : `port ${addr.port}`;
+    const bind = typeof addr === 'string' ? `pipe ${addr}` : `port ${addr.port}`;
     console.log(`Listening on ${bind}`);
   };
 
