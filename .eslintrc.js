@@ -35,5 +35,6 @@ module.exports = {
     'fp/no-rest-parameters': 'off',
     'fp/no-unused-expression': 'off',
     'fp/no-mutation': 'error',
+    'fp/no-throw': 'off',
   },
 };
