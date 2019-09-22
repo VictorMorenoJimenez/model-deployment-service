@@ -8,6 +8,6 @@ function fileFilter(req, file, cb) {
   }
 }
 
-const uploadMiddleware = multer({ dest: 'models/', fileFilter });
+const uploadMiddleware = multer({ dest: 'tmp/', fileFilter });
 
 export default uploadMiddleware;
