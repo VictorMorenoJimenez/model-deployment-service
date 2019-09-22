@@ -7,7 +7,7 @@ import { normalizePort } from './utils/server';
 const { MONGO_URI, PORT } = config;
 
 mongoose.connect(MONGO_URI, {
-  server: { socketOptions: { keepAlive: 1 } },
+  keepAlive: 1,
   useNewUrlParser: true,
 });
 
