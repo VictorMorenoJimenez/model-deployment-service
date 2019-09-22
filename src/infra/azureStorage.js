@@ -34,27 +34,17 @@ const uploadContent = async (content, blobName) => {
   return blockBlobURL.upload(DEFAULT_ABORTER, content, content.length);
 };
 
-const uploadFile = async (filepath) => {
+const uploadFile = async (filepath, blobName) => {
   const resolvedFilepath = path.resolve(filepath);
-  const fileName = path.basename(resolvedFilepath);
-  const blockBlobURL = BlockBlobURL.fromContainerURL(containerURL, fileName);
+  const blockBlobURL = BlockBlobURL.fromContainerURL(containerURL, blobName);
   return uploadFileToBlockBlob(DEFAULT_ABORTER, resolvedFilepath, blockBlobURL);
 };
 
-const uploadStream = async (filepath) => {
+const uploadStream = async (filepath, blobName) => {
   const resolvedFilepath = path.resolve(filepath);
-  const fileName = path.basename(resolvedFilepath).replace('.md', '-stream.md');
-  const blockBlobURL = BlockBlobURL.fromContainerURL(containerURL, fileName);
-
-  const stream = fs.createReadStream(resolvedFilepath, {
-    highWaterMark: FOUR_MEGABYTES,
-  });
-
-  const uploadOptions = {
-    bufferSize: FOUR_MEGABYTES,
-    maxBuffers: 5,
-  };
-
+  const blockBlobURL = BlockBlobURL.fromContainerURL(containerURL, blobName);
+  const stream = fs.createReadStream(resolvedFilepath, { highWaterMark: FOUR_MEGABYTES });
+  const uploadOptions = { bufferSize: FOUR_MEGABYTES, maxBuffers: 5 };
   return uploadStreamToBlockBlob(
     DEFAULT_ABORTER,
     stream,
