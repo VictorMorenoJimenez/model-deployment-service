@@ -25,6 +25,8 @@
     "method-override": "^3.0.0",
     "mongoose": "^5.7.1",
     "morgan": "^1.8.0",
+    "onnxjs": "^0.1.7",
+    "ramda": "^0.26.1",
     "resource-router-middleware": "^0.6.0",
     "swagger-ui-express": "^4.1.1",
     "winston": "^3.2.1",
