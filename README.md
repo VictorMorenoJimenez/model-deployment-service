@@ -10,7 +10,7 @@
 
 ## Description
 
-The idea is to create a web service to create and store machine learning models.
+The idea is to create a web service to store machine learning models and make predictions remotely.
 These models will be in a standard format [ONNX](https://onnx.ai/). This format allows data scientists and ML practitioners to export models from a variety of libraries: [SKLearn](https://scikit-learn.org/), 
 [Tensorflow](https://www.tensorflow.org/) ... into a common format.
 The pretrained model is received by the server as multi-part data and once uploaded, the model can be used
