@@ -19,17 +19,12 @@ const dbConnection = mongoose.connection;
 
 dbConnection.once('open', () => {
   const port = normalizePort(PORT);
-  app.set('port', port);
   const server = http.createServer(app);
   server.listen(port);
 
   const onError = (error) => {
-    if (error.syscall !== 'listen') {
-      throw error;
-    }
-
+    if (error.syscall !== 'listen') throw error;
     const bind = typeof port === 'string' ? `Pipe ${port}` : `Port ${port}`;
-
     switch (error.code) {
       case 'EACCES':
         console.error(`${bind} requires elevated privileges`);
