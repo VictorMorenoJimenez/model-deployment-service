@@ -29,7 +29,10 @@ Table of Contents
 
 ## Features
 
-TODO
+- REST API to **upload**, **make predictions** and **evaluate** Machine Learning models.
+- Supports models from a variety of sources. Check [this]().
+- [WebSockets](https://developer.mozilla.org/docs/Web/API/WebSockets_API) support for predictions
+
 
 ## Install
 
