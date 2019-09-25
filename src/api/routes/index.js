@@ -5,12 +5,12 @@ import sessionRouter from './session';
 
 const router = express.Router();
 
-router.use(modelRouter);
-router.use(inferenceRouter);
-router.use(sessionRouter);
-
 router.get('/', (_, res) => {
-  res.send('Hello World');
+  res.sendStatus(200);
 });
+
+router.use('/model', modelRouter);
+router.use('/', inferenceRouter);
+router.use('/session', sessionRouter);
 
 export default router;

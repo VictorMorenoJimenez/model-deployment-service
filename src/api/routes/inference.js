@@ -2,11 +2,14 @@ import express from 'express';
 
 const router = express.Router();
 
-router.post('/predict/:id', (req, res) => {
-
+router.get('/predict/:sessionId', (req, res) => {
 });
 
-router.post('/evaluate/:id', (req, res) => {
+router.get('/evaluate/:sessionId', (req, res) => {
+  const { query, params } = req;
+  const { metric } = query;
+
+  res.json(metric);
 });
 
 router.get('/metrics', (req, res) => {
