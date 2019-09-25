@@ -4,8 +4,8 @@
   "description": "Microservice to storage machine learning models and make predictions on demand.",
   "main": "dist",
   "scripts": {
-    "dev": "nodemon -w src --exec \"babel-node src/server.js \"",
-    "build": "babel src -s -D -d dist",
+    "dev": "nodemon --exec babel-node src/server.js",
+    "build": "babel src --out-dir dist",
     "start": "node dist/server.js",
     "prestart": "npm run -s build",
     "test": "jest src",
@@ -39,6 +39,7 @@
     "@babel/core": "^7.6.0",
     "@babel/node": "^7.6.1",
     "@babel/preset-env": "^7.6.0",
+    "babel-polyfill": "^6.26.0",
     "coveralls": "^3.0.6",
     "eslint": "^6.1.0",
     "eslint-config-airbnb": "^18.0.1",
